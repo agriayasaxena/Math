@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        background-color: darkslategrey;
+    }
+
+    h1 {
+        color: skyblue;
+    }
+
+</style>
+</head>
+
+<!--##NO predefine-->
+<body>
+<h1>Advance Calculator</h1>
+<br>
+<form method="POST">
+<select name='operation'aria-label='operationDropdown'>
+	<br>
+	<option>Choose</option>
+	<option value='simplify'>Simplify</option>
+	<option value='factor'>Factor</option>
+</select>
+<input name="text" placeholder="Enter equation">
+<br>
+<input type="submit">
+</form>
+<p>Your equation is {{equation}}={{result}}</p>
+</body>
+</html>
